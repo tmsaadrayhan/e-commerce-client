@@ -23,11 +23,11 @@ const Card = ({ productId }) => {
       // Cleanup code here
     };
   }, []); // Empty dependency array means this effect will only run once after the initial render
-  console.log(product);
+
   return (
     <div>
-      <div className="rounded-xl overflow-hidden m-[.5rem]">
-        <img src={product.image} alt="" />
+      <div className="m-[.5rem]">
+        <img className="rounded-xl" src={product.image} alt="" />
       </div>
       <div className="m-[.5rem]">
         <article>

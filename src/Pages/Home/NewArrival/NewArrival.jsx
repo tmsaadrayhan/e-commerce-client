@@ -5,7 +5,7 @@ import Card from "../Card/Card";
 
 const NewArrival = () => {
   const [products, setProducts] = useState([]);
-
+  
   useEffect(() => {
     const fetchData = async () => {
       try {

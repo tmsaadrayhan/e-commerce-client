@@ -101,9 +101,13 @@ const Header = () => {
               <img className="w-[4rem]" src={headerImg.img} alt="" />
               <div className="flex grow justify-center">
                 {categories.map((category) => (
-                  <p className="mx-[1rem]" key={category._id}>
+                  <Link
+                    to={`/category/${category._id}`}
+                    className="mx-[1rem]"
+                    key={category._id}
+                  >
                     {category.name}{" "}
-                  </p>
+                  </Link>
                 ))}
               </div>
               <div>
